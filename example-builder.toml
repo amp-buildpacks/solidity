@@ -2,7 +2,7 @@ description = "A sample Builder for using Solidity related CNBs"
 
 [[buildpacks]]
   id = "amp-buildpacks/solc"
-  uri = "urn:cnb:registry:amp-buildpacks/solc@0.1.0"
+  uri = "docker://ghcr.io/amp-buildpacks/solc:0.1.0"
 
 [[buildpacks]]
   id = "paketo-buildpacks/procfile"
