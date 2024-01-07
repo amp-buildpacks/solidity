@@ -1,0 +1,22 @@
+description = "A sample Builder for using Solidity related CNBs"
+
+[[buildpacks]]
+  id = "amp-buildpacks/solc"
+  uri = "docker://ghcr.io/amp-buildpacks/solc:0.1.0"
+
+[[buildpacks]]
+  id = "paketo-buildpacks/procfile"
+  uri = "urn:cnb:registry:paketo-buildpacks/procfile@5.6.8"
+
+[[order]]
+  [[order.group]]
+    id = "amp-buildpacks/solc"
+
+  [[order.group]]
+    id = "paketo-buildpacks/procfile"
+    optional = true
+
+[stack]
+  build-image = "docker.io/paketobuildpacks/build-jammy-tiny"
+  id = "io.buildpacks.stacks.jammy.tiny"
+  run-image = "docker.io/paketobuildpacks/run-jammy-tiny"
