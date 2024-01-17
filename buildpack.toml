@@ -4,8 +4,8 @@ api = "0.7"
   description = "A Cloud Native Buildpack with an order definition suitable for Solidity applications"
   homepage = "https://github.com/amp-buildpacks/solidity"
   id = "amp-buildpacks/solidity"
-  keywords = ["solidity", "composite"]
-  name = "Solidity Build Pack"
+  keywords = ["Solidity"]
+  name = "AMP Buildpack for Solidity"
   version = "{{.version}}"
 
   [[buildpack.licenses]]
